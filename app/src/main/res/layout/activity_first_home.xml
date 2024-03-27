@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FirstHomeActivity">
+    <FrameLayout
+        android:id="@+id/container_layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btm_nav"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:longClickable="false"
+        android:theme="@style/Theme.AppCompat"
+        app:menu="@menu/bottom_menu"
+        android:id="@+id/btm_nav"/>
+</RelativeLayout>
